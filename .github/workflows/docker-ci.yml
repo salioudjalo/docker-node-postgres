@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t app:test .
+        run: docker build -t docker-node-postgres:${{ github.sha }} .
